@@ -1,18 +1,31 @@
-.contryForm{
-    border-radius: 1rem;
-    padding: 2rem;
-    background-color: #9B9A9A;
-    box-shadow: 0 0 10px #696969;
-}
-.btn-primary {
-    --bs-btn-bg: #7949C0;
-    border:none;
-}
-.form-control{
-    background-color:#696969 ;
-    border:none;
+.FormContainer {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #9b9a9a;
+  box-shadow: 0 0 10px #696969;
 }
 
-.form-control::placeholder{
-    color:#fff;
+.form-label {
+  color: #fff;
+  font-weight: 500;
+}
+.form-label input {
+  background-color: #9b9a9a !important;
+}
+.btn-primary {
+  --bs-btn-bg: #7949c0 !important;
+  border: none !important;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+  --bs-btn-bg: #371766 !important;
+}
+.form-control {
+  background-color: #696969;
+  border: none;
+}
+
+.form-control::placeholder {
+  color: #fff;
 }

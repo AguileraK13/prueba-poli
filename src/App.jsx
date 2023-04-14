@@ -39,6 +39,8 @@ function App() {
       onInputChange: onInputChange,
       onSubmit: onSubmitContry,
       label: "Nombre del país",
+      placeholder: "Ingresa el nombre de algún país",
+      btnName: "Buscar país",
     },
     {
       name: "thingName",
@@ -46,6 +48,8 @@ function App() {
       onInputChange: onInputChange,
       onSubmit: onSubmitThing,
       label: "thingName",
+      placeholder: "Ingresa algún texto",
+      btnName: "Agregar",
     },
   ];
 
@@ -59,7 +63,6 @@ function App() {
               className="mx-auto d-block mb-5"
               style={{ width: "35%" }}
             />
-
             {form.map((input, index) => (
               <FormContainer
                 key={index}
@@ -68,16 +71,17 @@ function App() {
                 onInputChange={input.onInputChange}
                 onSubmit={input.onSubmit}
                 label={input.label}
+                placeholder={input.placeholder}
+                btnName={input.btnName}
               />
             ))}
           </div>
         </Col>
-        {contry && (
-          <Col>
-            <h2>Results: </h2>
-            <CardContainer contry={contry} />
-          </Col>
-        )}
+        <Col className="d-flex align-items-center justify-content-center">
+          {contry && (
+            <CardContainer className="mx-auto d-block" contry={contry} />
+          )}
+        </Col>
       </Row>
     </Container>
   );

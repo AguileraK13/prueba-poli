@@ -1,0 +1,12 @@
+:root {
+  --bs-primary-rgb: red;
+}
+.card {
+  box-shadow: 0 0 10px #696969;
+  background-color: #9b9a9a !important;
+  color: #fff !important;
+}
+.badge {
+  margin-right: 0.4rem;
+  color: #7949c0 !important;
+}
