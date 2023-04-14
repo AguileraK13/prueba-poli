@@ -1,0 +1,18 @@
+.contryForm{
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #9B9A9A;
+    box-shadow: 0 0 10px #696969;
+}
+.btn-primary {
+    --bs-btn-bg: #7949C0;
+    border:none;
+}
+.form-control{
+    background-color:#696969 ;
+    border:none;
+}
+
+.form-control::placeholder{
+    color:#fff;
+}
